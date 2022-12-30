@@ -53,6 +53,7 @@ public class Runnables {
                     reviver.sendMessage(ChatColor.DARK_GREEN + Main.getInstance().getConfig().getString("wakeupplayer").replace("{player}", player.getName()));
                     PoseUtility.stop(reviver);
                     reviver.removePotionEffect(PotionEffectType.BLINDNESS);
+                    reviver.removePotionEffect(PotionEffectType.JUMP);
                 }
 
                 ++time;
